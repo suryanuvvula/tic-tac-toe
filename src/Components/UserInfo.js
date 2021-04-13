@@ -14,7 +14,7 @@ export class UserInfo extends Component {
   handleClick = (event) => {
     event.preventDefault();
     const { player1, player2 } = this.state;
-    this.props.names(player, player2);
+    this.props.names(player1, player2);
   };
 
   render() {
