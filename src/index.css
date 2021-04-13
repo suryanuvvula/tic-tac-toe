@@ -32,3 +32,22 @@ code {
   width: 300px;
   box-shadow: 6px 6px 5px gray;
 }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10vh;
+  box-shadow: 0px 2px 5px gray;
+}
+
+.title {
+  width: 30%;
+}
+
+.results {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: auto;
+}
