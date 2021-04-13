@@ -103,4 +103,31 @@ export class Board extends Component {
     }
     return false;
   };
+
+  reset = () => {
+    let allTiles = document.getElementsByClassName("tile");
+    for (let i = 0; i < allTiles.length; i++) {
+      allTiles[i].innerHTML = "";
+      allTiles[i].classList.add("not-played");
+    }
+  };
+
+  render() {
+    return (
+      <div className="board">
+        {this.generateTiles().map((element, i) => {
+          return (
+            <div
+              id={`tile${i}`}
+              key={i}
+              className={element}
+              onClick={this.handleClick}
+            />
+          );
+        })}
+      </div>
+    );
+  }
 }
+
+export default Board;
